@@ -1,0 +1,103 @@
+body {
+  background-color: #f8fcfd;
+  font-family: 'Istok Web', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+/*
+Colors used:
+Primary Color (Blue): #016f92;
+Secondary Color (Green): #018d92;
+Tertiary Color (Orange): #f98f49;
+*/
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #016f92;
+  text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+  color: #016f92;
+}
+
+a:hover,
+a:focus {
+  color: #014b62;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:active { /* selected link */
+  color: #51b0cd;
+}
+
+.button {
+  display: inline-;
+  background-color: #018d92;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #007478;
+  transition: 0.2s opacity;
+}
+
+.button:visited {
+  background-color: #018d92;
+  color: hsl(0, 0%, 100%);
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #fd7922;
+  text-transform: uppercase;
+  border: 2px solid #fd7922;
+}
+
+.button.contact:hover {
+  background-color: #f98f49;
+  color: hsl(0, 0%, 100%);
+}
+
+.button.contact:active {
+  background-color: #bf4e03;
+  color: hsl(0, 0%, 100%);
+}
