@@ -1,18 +1,22 @@
-body {
-  background-color: #f8fcfd;
-  font-family: 'Istok Web', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
-}
-
 /*
 Colors used:
 Primary Color (Blue): #016f92;
 Secondary Color (Green): #018d92;
 Tertiary Color (Orange): #f98f49;
 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8fcfd;
+  font-family: 'Istok Web', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #023446;
+}
 
 h1,
 h2,
@@ -51,7 +55,7 @@ a {
 }
 
 a:visited { /* visited link */
-  color: #016f92;
+  color: #018d92;
 }
 
 a:hover,
@@ -65,7 +69,7 @@ a:active { /* selected link */
 }
 
 .button {
-  display: inline-;
+  display: inline-block;
   background-color: #018d92;
   color: hsl(0, 0%, 100%);
   font-weight: 400;
@@ -100,4 +104,97 @@ a:active { /* selected link */
 .button.contact:active {
   background-color: #bf4e03;
   color: hsl(0, 0%, 100%);
+}
+
+#social-links {
+  width: 100px;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  align-items: left;
+}
+
+/* Layout Styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #023446;
+}
+
+#about .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #023446;
+}
+
+#hero {
+  background-color: #f8fcfd;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.logo {
+  max-width: 250;
+}
+
+header {
+  background-color: #eceded;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #023446;
+}
+
+nav > ul > li > a:visited { /* visited link */
+  color: #fd7922;
+}
+
+nav > ul > li > a:hover,
+a:focus {
+  color: #014b62;
+  text-decoration: underline;
+}
+
+nav > ul > li > a:active { /* selected link */
+  color: #51b0cd;
+}
+
+.css-box-shadow {/* start ------------ */
+  width: [object Object]px;
+  height: [object Object]px;
+  background: hsl(0, 0%, 97%);
+  border: solid hsl(0, 0%, 74%) 1px;
+  box-shadow: 0 4px 16px rgba(2, 52, 70, 0.2);
+  -webkit-box-shadow: 0 4px 16px rgba(2, 52, 70, 0.2);
+  -moz-box-shadow: 0 4px 16px rgba(2, 52, 70, 0.2);
 }
