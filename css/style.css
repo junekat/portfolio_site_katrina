@@ -26,12 +26,12 @@ h4 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
@@ -41,7 +41,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: 400;
 }
 
@@ -146,9 +146,14 @@ a:active { /* selected link */
   margin-top: 20px;
 }
 
+.image-about {
+  display: inline-block;
+  width: 100%;
+}
+
 #hero {
   background-color: #f8fcfd;
-  text-align: center;
+  text-align: left;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -159,29 +164,54 @@ a:active { /* selected link */
 }
 
 .logo {
-  max-width: 250;
+  margin-top: 10px;
+  max-width: 55%;
 }
 
 header {
   background-color: #eceded;
-  text-align: center;
   width: 100%;
-  padding: 10px 0;
+  padding: 0 0 4px;
+  position: fixed;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle .navtoggle.responsive {
   position: relative;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+.navtoggle li .icon {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #ff7f5080;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -217,17 +247,46 @@ nav > ul > li > a:active { /* selected link */
   -moz-box-shadow: 0 4px 16px rgba(2, 52, 70, 0.2);
 }
 
+main {
+  padding-top: 72px;
+}
+
 /* medium devices 640px or wider */
 @media only screen and (min-width: 580px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
+    position: fixed;
+  }
+
+  main {
+    padding-top: 128px;
   }
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
   }
 
   .logo {
@@ -243,16 +302,30 @@ nav > ul > li > a:active { /* selected link */
   .col-md-6 {
     width: 50%;
   }
+
+  .about-section1 {
+    width: 50%;
+    float: inline-start;
+  }
+
+  .image-about {
+    display: flex;
+    width: 60%;
+  }
 }
 
 /* large devices 1024px or wider */
 @media only screen and (min-width: 1024px) {
-  .col-lg-5 {
-    width: 40%;
+  main {
+    padding-top: 160px;
   }
 
   .col-lg-7 {
     width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
   }
 
   .container {
@@ -266,12 +339,6 @@ nav > ul > li > a:active { /* selected link */
   float: left;
   padding: 0 10px;
   text-align: left;
-}
-
-#about-picture {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
 }
 
 @keyframes color-change1 {
