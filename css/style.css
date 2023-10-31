@@ -115,54 +115,6 @@ a:active { /* selected link */
   align-items: left;
 }
 
-/* Layout Styling */
-
-.container {
-  padding: 0 15px;
-}
-
-.row {
-  margin: 25px 0;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-#work .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #023446;
-}
-
-#about-page .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #023446;
-}
-
-#about-page h3 {
-  margin-bottom: 0;
-  margin-top: 20px;
-}
-
-.image-about {
-  display: inline-block;
-  width: 100%;
-}
-
-#hero {
-  background-color: #f8fcfd;
-  text-align: left;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-
-#hero span {
-  display: block;
-}
-
 .logo {
   margin-top: 10px;
   max-width: 55%;
@@ -248,7 +200,55 @@ nav > ul > li > a:active { /* selected link */
 }
 
 main {
-  padding-top: 72px;
+  padding-top: 96px;
+}
+
+/* Layout Styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #023446;
+}
+
+#about-page .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #023446;
+}
+
+#about-page h3 {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.image-about {
+  display: inline-block;
+  width: 100%;
+}
+
+#hero {
+  background-color: #f8fcfd;
+  text-align: left;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero span {
+  display: block;
 }
 
 /* medium devices 640px or wider */
@@ -261,6 +261,17 @@ main {
 
   main {
     padding-top: 128px;
+  }
+
+  section > ol > li {
+    display: inline-block;
+  }
+
+  section > ol > li > a {
+    padding: 0 15px;
+    font-weight: 500;
+    color: #018d92;
+    transition: 0.5s opacity;
   }
 
   nav {
@@ -341,6 +352,14 @@ main {
   text-align: left;
 }
 
+/* practice animation */
+
+#about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 @keyframes color-change1 {
   0% { fill: #edc655; }
   50% { fill: #fcffad; }
@@ -378,6 +397,8 @@ main {
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+/* hometown animation */
 
 #hometown {
   width: 100%;
