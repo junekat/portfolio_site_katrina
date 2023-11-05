@@ -127,6 +127,20 @@ header {
   position: fixed;
 }
 
+.css-box-shadow {/* start ------------ */
+  width: [object Object]px;
+  height: [object Object]px;
+  background: hsl(0, 0%, 97%);
+  border: solid hsl(0, 0%, 74%) 1px;
+  box-shadow: 0 4px 16px rgba(2, 52, 70, 0.2);
+  -webkit-box-shadow: 0 4px 16px rgba(2, 52, 70, 0.2);
+  -moz-box-shadow: 0 4px 16px rgba(2, 52, 70, 0.2);
+}
+
+main {
+  padding-top: 96px;
+}
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -169,7 +183,7 @@ nav > ul {
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   color: #d33f05;
   transition: 0.5s opacity;
 }
@@ -187,20 +201,6 @@ a:focus {
 
 nav > ul > li > a:active { /* selected link */
   color: #b63400;
-}
-
-.css-box-shadow {/* start ------------ */
-  width: [object Object]px;
-  height: [object Object]px;
-  background: hsl(0, 0%, 97%);
-  border: solid hsl(0, 0%, 74%) 1px;
-  box-shadow: 0 4px 16px rgba(2, 52, 70, 0.2);
-  -webkit-box-shadow: 0 4px 16px rgba(2, 52, 70, 0.2);
-  -moz-box-shadow: 0 4px 16px rgba(2, 52, 70, 0.2);
-}
-
-main {
-  padding-top: 96px;
 }
 
 /* Layout Styling */
@@ -282,10 +282,15 @@ main {
 
   nav > ul {
     margin: 1em 0;
+    display: inline-block;
   }
 
   nav > ul > li {
     display: inline-block;
+  }
+
+  .navtoggle.responsive li {
+    all: unset;
   }
 
   .navtoggle li:not(:last-child) {
@@ -296,8 +301,10 @@ main {
     display: none;
   }
 
-  .navtoggle.responsive li {
-    display: block;
+  .navtoggle.responsive nav {
+    all: unset;
+    width: auto;
+    float: right;
   }
 
   .logo {
