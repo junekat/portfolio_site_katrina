@@ -9,15 +9,6 @@ Tertiary Color (Orange): #d33f05, #b63400;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #f8fcfd;
-  font-family: 'Istok Web', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #023446;
-}
-
 h1,
 h2,
 h3,
@@ -26,23 +17,23 @@ h4 {
 }
 
 h1 {
-  font-size: 1.75em;
+  font-size: 1.85em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.35em;
-  font-weight: 400;
+  font-size: 1.45em;
+  font-weight: 700;
 }
 
 h4 {
-  font-size: 1.25em;
-  font-weight: 400;
+  font-size: 1.15em;
+  font-weight: 600;
 }
 
 img {
@@ -141,6 +132,20 @@ main {
   padding-top: 96px;
 }
 
+body {
+  background-color: #eceded;
+  font-family: 'Istok Web', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #023446;
+}
+
+footer {
+  background-color: #f8fcfd;
+}
+
+/* hamburger menu */
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -174,6 +179,7 @@ main {
   padding: 0 0 10px;
 }
 
+/* regular menu */
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -219,11 +225,6 @@ nav > ul > li > a:active { /* selected link */
   display: table;
 }
 
-#work .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #023446;
-}
-
 #about-page .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #023446;
@@ -249,6 +250,36 @@ nav > ul > li > a:active { /* selected link */
 
 #hero span {
   display: block;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+#hero p {
+  padding: 0 25%;
+  text-align: center;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #023446;
+}
+
+#work .container {
+  padding: 20px 0;
+}
+
+#work h2 {
+  padding-left: 10px;
+}
+
+#contact .container {
+  padding-top: 10px;
+}
+
+iframe {
+  display: flex;
 }
 
 /* medium devices 640px or wider */
@@ -347,7 +378,7 @@ nav > ul > li > a:active { /* selected link */
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
