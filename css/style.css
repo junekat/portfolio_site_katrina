@@ -1,8 +1,9 @@
 /*
-Colors used:
+Colors Palette:
 Primary Color (Blue): #016f92, 014b62, 017ea3;
 Secondary Color (Green): #018483;
 Tertiary Color (Orange): #d33f05, #b63400;
+Background (Gray, White): #eceded, #f8fcfd;
 */
 
 * {
@@ -80,6 +81,7 @@ a:active { /* selected link */
   text-decoration: none;
 }
 
+/* Contact email button */
 .button.contact {
   background-color: transparent;
   color: #d33f05;
@@ -253,12 +255,7 @@ nav > ul > li > a:active { /* selected link */
 }
 
 #hero h1 {
-  text-align: center;
-}
-
-#hero p {
-  padding: 0 25%;
-  text-align: center;
+  text-align: left;
 }
 
 #work .row {
@@ -292,6 +289,15 @@ iframe {
 
   main {
     padding-top: 128px;
+  }
+
+  #hero h1 {
+    text-align: center;
+  }
+
+  #hero p {
+    padding: 0 25%;
+    text-align: center;
   }
 
   section > ol > li {
